@@ -1,0 +1,23 @@
+#fixed-sidebar{
+      position: fixed;
+      overflow-y: auto;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      padding-top: 5rem;
+      width: 300px;
+      transition: left 0.2s linear;
+      text-align: right;
+
+      &.sidebar-toggled{
+            left: 0;
+      }
+
+      @media screen and(min-width: 992px){
+            left: 0;
+
+            &.sidebar-toggled{
+                  left: -300px;
+            }
+      }
+}

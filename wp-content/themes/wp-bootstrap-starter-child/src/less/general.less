@@ -1,0 +1,66 @@
+html{
+      position: relative;
+      min-height: 100%;
+}
+
+body{
+      overflow-x: hidden;
+}
+
+#page{
+      overflow-x: hidden;
+      padding-bottom: 5rem !important;
+}
+
+.content-area{
+      min-height: 400px;
+}
+
+#primary-wrap{
+      margin-left: 0;
+      transition: margin-left 0.2s linear, padding-left 0.2s linear;
+      
+      &.sidebar-toggled{
+            margin-left: 300px;
+      }
+
+      @media screen and(min-width: 992px){
+            padding-left: 315px;
+
+            &.sidebar-toggled{
+                  margin-left: 0;
+                  padding-left: 0;
+            }
+      }
+}
+
+#main{
+
+      article{
+            padding: 16px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 10px -4px #333;
+
+            h1{
+                  padding: 8px 16px;
+                  border-bottom: 1px solid #dee2e6;
+            }
+      }
+
+      .post-navigation{
+            padding: 8px 16px;
+            margin-top: 20px;
+      }
+}
+
+.shadow-md{
+      box-shadow: 0 0 10px -4px #333;
+}
+
+.border-gray{
+      border-color: #dee2e6;
+}
+
+img.img-sm{
+      max-width: 200px;
+}
